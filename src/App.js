@@ -6,6 +6,7 @@ import type { WatchableType } from './types/WatchableType'
 import WatchableThing from './components/WatchableThing'
 import { Languages } from './types/Language'
 import { Tags } from './types/Tag'
+import Footer from './components/Footer'
 
 class App extends Component {
   constructor(props) {
@@ -110,6 +111,7 @@ class App extends Component {
             <WatchableThing thing={this.state.result} language={this.state.language} />
           </div>
         )}
+        <Footer language={this.state.language} />
       </div>
     )
   }
