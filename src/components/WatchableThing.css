@@ -1,11 +1,3 @@
-.WatchableThing {
-  /*display: flex;*/
-  /*column-gap: 1em;*/
-}
-
-.WatchableThing .seasonepisode {
-  /*display: inline-block;*/
-}
 .WatchableThing .title {
   font-size: 150%;
 }
