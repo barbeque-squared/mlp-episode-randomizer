@@ -1,0 +1,8 @@
+.SeasonEpisodeBox {
+  font-variant: all-small-caps;
+  min-width: 6.5em;
+}
+
+.SeasonEpisodeBox .label {
+  color: #999;
+}

@@ -1,0 +1,49 @@
+body {
+  background-color: #333;
+  color: lightgray;
+  font-family: "Arial", sans-serif;
+}
+
+.App {
+  font-size: 24px;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  background-color: #222;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.App .language {
+  display: flex;
+  gap: 1em;
+}
+
+.App .random > * {
+  line-height: 1.5em;
+  border-radius: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+.App .random label {
+  display: block;
+  background-color: #333;
+}
+
+.App .random select {
+  display: block;
+  font-size: 90%;
+  width: 100%;
+}
+
+.App .random button {
+  width: 100%;
+  font-size: inherit;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+}
+
+.App .random button:active {
+  background-color: royalblue;
+}

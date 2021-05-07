@@ -1,0 +1,35 @@
+{
+  "homepage": "mlp",
+  "name": "mlp-episode-randomizer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "language-icons": "^0.3.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "transfer": "rsync --archive --delete build/ $npm_config_deploy_path",
+    "deploy": "yarn build && yarn transfer",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
