@@ -13,6 +13,7 @@ class App extends Component {
     super(props)
     this.state = {
       language: 'English',
+      singleEpisodes: true,
       doubleEpisodes: true,
       specials: false,
       equestriaGirls: false,
@@ -25,6 +26,13 @@ class App extends Component {
 
   radioLanguage = (event) => {
     this.setState({language: event.target.value})
+  }
+
+  checkSingleEpisodes = (event) => {
+    this.setState({
+      singleEpisodes: event.target.checked,
+      recompute: true
+    })
   }
 
   checkDoubleEpisodes = (event) => {
@@ -56,7 +64,8 @@ class App extends Component {
   }
 
   applyFilters() {
-    let filters: WatchableType[] = ['EPISODE']
+    let filters: WatchableType[] = []
+    if (this.state.singleEpisodes) {filters.push('EPISODE')}
     if (this.state.doubleEpisodes) {filters.push('DOUBLE_EPISODE')}
     if (this.state.specials) {filters.push('SPECIAL')}
     if (this.state.equestriaGirls) {filters.push('EQUESTRIA_GIRLS')}
@@ -94,20 +103,27 @@ class App extends Component {
           )})}
         </div>
         <div className={'random'}>
-          <label>
-            <input type={'checkbox'} checked={this.state.doubleEpisodes} onChange={this.checkDoubleEpisodes} />
-            {this.state.language === 'English' && (<>Two-parters</>)}
-            {this.state.language === 'German' && (<>Zwei-parters</>)}
-          </label>
-          <label>
-            <input type={'checkbox'} value={this.state.specials} onChange={this.checkSpecials} />
-            {this.state.language === 'English' && (<>Specials / Movie</>)}
-            {this.state.language === 'German' && (<>Specials / Film</>)}
-          </label>
-          <label>
-            <input type={'checkbox'} value={this.state.equestriaGirls} onChange={this.checkEquestriaGirls} />
-            Equestria Girls
-          </label>
+          <div className={'checkboxes'}>
+            <label>
+              <input type={'checkbox'} checked={this.state.singleEpisodes} onChange={this.checkSingleEpisodes} />
+              {this.state.language === 'English' && (<>Episodes</>)}
+              {this.state.language === 'German' && (<>Folgen</>)}
+            </label>
+            <label>
+              <input type={'checkbox'} checked={this.state.doubleEpisodes} onChange={this.checkDoubleEpisodes} />
+              {this.state.language === 'English' && (<>Two-parters</>)}
+              {this.state.language === 'German' && (<>Zwei-parters</>)}
+            </label>
+            <label>
+              <input type={'checkbox'} value={this.state.specials} onChange={this.checkSpecials} />
+              {this.state.language === 'English' && (<>Specials / Movie</>)}
+              {this.state.language === 'German' && (<>Specials / Film</>)}
+            </label>
+            <label>
+              <input type={'checkbox'} value={this.state.equestriaGirls} onChange={this.checkEquestriaGirls} />
+              Equestria Girls
+            </label>
+          </div>
           <select name={'tags'} onChange={this.selectTag}>
             <option value={''}>(Any)</option>
             {Tags.map(t => {return <option key={t} value={t}>{t}</option>})}

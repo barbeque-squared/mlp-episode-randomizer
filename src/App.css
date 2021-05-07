@@ -29,9 +29,15 @@ body {
   margin-bottom: 0.2em;
 }
 
-.App .random label {
-  display: block;
+.App .random .checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.2em;
+}
+
+.App .random .checkboxes label {
   background-color: #333;
+  border-radius: 0.5em;
 }
 
 .App .random select {
