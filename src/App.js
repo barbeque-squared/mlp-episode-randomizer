@@ -49,7 +49,10 @@ class App extends Component {
   }
 
   selectTag = (event) => {
-    this.setState({tag: event.target.value})
+    this.setState({
+      tag: event.target.value,
+      recompute: true
+    })
   }
 
   applyFilters() {
@@ -57,7 +60,12 @@ class App extends Component {
     if (this.state.doubleEpisodes) {filters.push('DOUBLE_EPISODE')}
     if (this.state.specials) {filters.push('SPECIAL')}
     if (this.state.equestriaGirls) {filters.push('EQUESTRIA_GIRLS')}
-    const choices = CHOICES.filter(w => filters.includes(w.type))
+    let choices
+    if (this.state.tag === '') {
+      choices = CHOICES.filter(w => filters.includes(w.type))
+    } else {
+      choices = CHOICES.filter(w => w.tags.includes(this.state.tag) && filters.includes(w.type))
+    }
     this.setState({
       choices,
       recompute: false
