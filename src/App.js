@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import LanguageIcon from './components/LanguageIcon'
-import { CHOICES } from './constants'
+import { CHOICES } from './constants/choices'
 import type { WatchableType } from './types/WatchableType'
 import WatchableThing from './components/WatchableThing'
 import { Languages } from './types/Language'

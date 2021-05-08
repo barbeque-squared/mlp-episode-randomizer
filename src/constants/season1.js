@@ -1,6 +1,6 @@
-import { Watchable } from './types/Watchable'
+import { Watchable } from '../types/Watchable'
 
-export const CHOICES: Watchable[] = [
+export const SEASON_1: Watchable[] = [
   {
     season: 1,
     episode: '1-2',

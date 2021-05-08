@@ -1,7 +1,7 @@
 Suggest random My Little Pony episodes to watch.
 
 It uses Flow for some static type hinting.
-Episodes are configured in `constants.js`.
+Episodes are configured in `constants/choices.js`.
 
 ## Commands
 
