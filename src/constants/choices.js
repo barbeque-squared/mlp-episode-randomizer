@@ -6,6 +6,7 @@ import { SEASON_4 } from './season4'
 import { SEASON_5 } from './season5'
 import { SEASON_6 } from './season6'
 import { SEASON_7 } from './season7'
+import { SEASON_8 } from './season8'
 
 export const CHOICES: Watchable[] = [].concat(
   SEASON_1,
@@ -14,5 +15,6 @@ export const CHOICES: Watchable[] = [].concat(
   SEASON_4,
   SEASON_5,
   SEASON_6,
-  SEASON_7
+  SEASON_7,
+  SEASON_8
 )

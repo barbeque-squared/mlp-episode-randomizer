@@ -75,7 +75,7 @@ export const SEASON_7: Watchable[] = [
     type: 'EPISODE',
     season: 7,
     episode: 8,
-    tags: ['Cutie Mark Crusaders'],
+    tags: ['Cutie Mark Crusaders', 'Other'],
     title: {
       english: "Hard to Say Anything",
       german: "Liebesgeschichten"

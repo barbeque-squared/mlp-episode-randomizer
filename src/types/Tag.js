@@ -9,10 +9,13 @@ export const Tags = [
   'Mane Six',
   'Spike',
   'Cutie Mark Crusaders',
+  'Young Six',
   'Trixie',
   'Starlight Glimmer',
   'Luna',
+  'Celestia',
   'Discord',
+  'Cozy Glow',
   'Other'
 ]
 
@@ -27,8 +30,11 @@ export type Tag =
   'Mane Six' |
   'Spike' |
   'Cutie Mark Crusaders' |
+  'Young Six' |
   'Trixie' |
   'Starlight Glimmer' |
   'Luna' |
+  'Celestia' |
   'Discord' |
+  'Cozy Glow' |
   'Other'
