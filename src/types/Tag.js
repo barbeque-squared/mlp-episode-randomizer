@@ -12,7 +12,8 @@ export const Tags = [
   'Trixie',
   'Starlight Glimmer',
   'Luna',
-  'Discord'
+  'Discord',
+  'Other'
 ]
 
 // Keep in sync with Tags
@@ -29,4 +30,5 @@ export type Tag =
   'Trixie' |
   'Starlight Glimmer' |
   'Luna' |
-  'Discord'
+  'Discord' |
+  'Other'
