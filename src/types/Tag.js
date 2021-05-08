@@ -8,6 +8,8 @@ export const Tags = [
   'Pinkie Pie',
   'Mane Six',
   'Spike',
+  'Cutie Mark Crusaders',
+  'Trixie'
 ]
 
 // Keep in sync with Tags
@@ -19,4 +21,6 @@ export type Tag =
   'Rainbow Dash' |
   'Pinkie Pie' |
   'Mane Six' |
-  'Spike'
+  'Spike' |
+  'Cutie Mark Crusaders' |
+  'Trixie'
