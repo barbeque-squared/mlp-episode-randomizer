@@ -9,7 +9,8 @@ export const Tags = [
   'Mane Six',
   'Spike',
   'Cutie Mark Crusaders',
-  'Trixie'
+  'Trixie',
+  'Luna'
 ]
 
 // Keep in sync with Tags
@@ -23,4 +24,5 @@ export type Tag =
   'Mane Six' |
   'Spike' |
   'Cutie Mark Crusaders' |
-  'Trixie'
+  'Trixie' |
+  'Luna'
