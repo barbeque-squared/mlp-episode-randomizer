@@ -10,6 +10,7 @@ export const Tags = [
   'Spike',
   'Cutie Mark Crusaders',
   'Trixie',
+  'Starlight Glimmer',
   'Luna',
   'Discord'
 ]
@@ -26,5 +27,6 @@ export type Tag =
   'Spike' |
   'Cutie Mark Crusaders' |
   'Trixie' |
+  'Starlight Glimmer' |
   'Luna' |
   'Discord'
