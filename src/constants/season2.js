@@ -4,7 +4,7 @@ export const SEASON_2: Watchable[] = [
   {
     season: 2,
     episode: '1-2',
-    tags: ['Mane Six'],
+    tags: ['Mane Six', 'Discord'],
     title: {
       english: 'The Return of Harmony',
       german: 'Freundschaft über alles'
