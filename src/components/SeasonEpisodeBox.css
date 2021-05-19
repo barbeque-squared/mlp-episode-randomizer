@@ -1,8 +1,14 @@
 .SeasonEpisodeBox {
+  display: table;
   font-variant: all-small-caps;
-  min-width: 6.5em;
 }
-
+.SeasonEpisodeBox > .row {
+  display: table-row;
+}
+.SeasonEpisodeBox > .row > * {
+  display: table-cell;
+}
 .SeasonEpisodeBox .label {
   color: #999;
+  padding-right: .5em;
 }

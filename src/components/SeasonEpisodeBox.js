@@ -12,30 +12,24 @@ type Props = {
 class SeasonEpisodeBox extends PureComponent<Props> {
   render() {
     const l = this.props.language
-    return <table className={'SeasonEpisodeBox'}>
-      <tbody>
-        <tr>
-          <td className={'label'}>
-            {l === 'English' && <>Season</>}
-            {l === 'German' && <>Staffel</>}
-          </td>
-          <td>
-            {this.props.season}
-          </td>
-        </tr>
-        {this.props.episode && (
-          <tr>
-            <td className={'label'}>
-              {l === 'English' && <>Episode</>}
-              {l === 'German' && <>Folge</>}
-            </td>
-            <td>
-              {this.props.episode}
-            </td>
-          </tr>
-        )}
-      </tbody>
-    </table>
+    return <div className={'SeasonEpisodeBox'}>
+      <div className={'row'}>
+        <div className={'label'}>
+          {l === 'English' && <>Season</>}
+          {l === 'German' && <>Staffel</>}
+        </div>
+        <div>{this.props.season}</div>
+      </div>
+      {this.props.episode && (
+        <div className={'row'}>
+          <div className={'label'}>
+            {l === 'English' && <>Episode</>}
+            {l === 'German' && <>Folge</>}
+          </div>
+          <div>{this.props.episode}</div>
+        </div>
+      )}
+    </div>
   }
 }
 
