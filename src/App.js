@@ -112,7 +112,7 @@ class App extends Component {
             <label>
               <input type={'checkbox'} checked={this.state.doubleEpisodes} onChange={this.checkDoubleEpisodes} />
               {this.state.language === 'English' && (<>Two-parters</>)}
-              {this.state.language === 'German' && (<>Zwei-Teiler</>)}
+              {this.state.language === 'German' && (<>Doppelfolgen</>)}
             </label>
             <label>
               <input type={'checkbox'} value={this.state.specials} onChange={this.checkSpecials} />
